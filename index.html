@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>My Finance Tracker</h1>
+    <div class="form-container">
+      <input type="text" id="item-name" placeholder="Expense/Income Description">
+      <input type="number" id="item-amount" placeholder="Amount">
+      <button onclick="addItem()">Add Item</button>
+    </div>
+    <div class="list-container">
+      <ul id="items-list"></ul>
+    </div>
+    <div class="total">
+      <h2>Total: ₱<span id="total-amount">0.00</span></h2>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
